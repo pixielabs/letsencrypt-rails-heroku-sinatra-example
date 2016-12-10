@@ -4,4 +4,4 @@ gem 'sinatra'
 gem 'rake'
 
 gem 'platform-api', github: 'jalada/platform-api', branch: 'master'
-gem 'letsencrypt-rails-heroku', github: 'pixielabs/letsencrypt-rails-heroku', branch: 'remove-rails-specific-code'
+gem 'letsencrypt-rails-heroku', '~> 0.3.0'

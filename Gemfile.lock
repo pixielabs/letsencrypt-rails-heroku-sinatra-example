@@ -6,15 +6,6 @@ GIT
     platform-api (0.8.0)
       heroics (~> 0.0.17)
 
-GIT
-  remote: git://github.com/pixielabs/letsencrypt-rails-heroku.git
-  revision: 6cfe36dcd9c89cbdc463955d09a9ee574338058a
-  branch: remove-rails-specific-code
-  specs:
-    letsencrypt-rails-heroku (0.2.7)
-      acme-client (~> 0.4.0)
-      platform-api
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -30,6 +21,9 @@ GEM
       moneta
       multi_json (>= 1.9.2)
       netrc
+    letsencrypt-rails-heroku (0.3.0)
+      acme-client (~> 0.4.0)
+      platform-api
     moneta (0.8.0)
     multi_json (1.12.1)
     multipart-post (2.0.0)
@@ -48,7 +42,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  letsencrypt-rails-heroku!
+  letsencrypt-rails-heroku (~> 0.3.0)
   platform-api!
   rake
   sinatra
